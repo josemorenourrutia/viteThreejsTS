@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  display: block;
+}
+
+.logo {
+  width: 32px;
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+}
