@@ -76,15 +76,11 @@ const plane = new THREE.Mesh(
 plane.rotation.set(-Math.PI / 2, 0, 0)
 plane.receiveShadow = true
 scene.add(plane)
-console.log(scene);
 
 const clock = new THREE.Clock()
-let prevElapsedTime = 0
 
 const loop = () => {
   const elapsedTime = clock.getElapsedTime()
-
-  prevElapsedTime = elapsedTime
 
   sphereMaterial.uniforms.uTime.value = elapsedTime
 

@@ -6,8 +6,8 @@ varying vec2 vUv;
 void main() {
     vec4 modelPosition = vec4(position, 1.0);
 
-    modelPosition.y += sin(modelPosition.x * uFrequency.y - uTime) * 0.1;
-    modelPosition.x += cos(modelPosition.x * uFrequency.x - uTime) * 0.1;
+    modelPosition.y += sin(modelPosition.x * uFrequency.y - uTime) * 0.51;
+    modelPosition.x += cos(modelPosition.x * uFrequency.x - uTime) * 0.51;
 
     vec4 viewPosition = viewMatrix * modelMatrix * modelPosition;
     vec4 projectedPosition = projectionMatrix * viewPosition;
@@ -16,7 +16,7 @@ void main() {
     vUv = uv;
 }
 
-/*
+
 // void main() {
 //     vec4 modelPosition = modelMatrix * vec4(position, 1.0);
 
@@ -29,4 +29,3 @@ void main() {
 //     gl_Position = projectedPosition;
 //     vUv = uv;
 // }
-*/
