@@ -2,7 +2,7 @@ import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
 
 
-// hola
+// hola y
 export default class CRC {
     canvas: HTMLElement;
     renderer: THREE.WebGLRenderer;
